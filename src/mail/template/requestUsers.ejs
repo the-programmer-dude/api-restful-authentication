@@ -1,0 +1,13 @@
+<div style="font-family: sans-serif; padding: 2rem;">
+    <h1 class="fs-1 fst-bold">Hello, comrade!</h1>
+    
+    <p>Someone(hopefully you) requested the usernames associated with this email! <br> So, these are the usernames: </p>
+    
+    <ul style="list-style:square; line-height: 1.5rem;">
+        <% accs.forEach(account => { %>
+            <li><%=account%></li>
+        <% }) %>
+    </ul>
+    
+    <p style="font-style: italic; color: gray;">Note: if you didn't request this, simply ignore the email.</p>
+</div>

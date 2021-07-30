@@ -1,0 +1,16 @@
+<div style="font-family: sans-serif; padding: 2rem;">
+    <h1 class="fs-1 fst-bold">Hello again!</h1>
+    
+    <p>We're here because your account was updated: </p>
+
+    <ul style="list-style:square; line-height: 1.5rem;">
+        <% Object.keys(updates).forEach(field => { %>
+            <% if (field !== "madeByAdmin" && updates[field]) { %>
+                <li><%=field%> set to: <%=updates[field]%></li>
+            <% } %>
+        <% }) %>
+    </ul>
+    <p>This was made by: <%= updates.madeByAdmin %> </p>
+
+    <p style="font-style: italic; color: gray;">For questions or support, contact us.</p>
+</div>
